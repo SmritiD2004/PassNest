@@ -43,12 +43,14 @@ cd passnest
 
 ### 2️⃣ Setup Backend
 cd backend
+
 npm install
 
 
 ### 3️⃣ Create a .env file inside backend/:
 
 MONGO_URI=your-mongodb-connection-string
+
 DB_NAME=your-database-name
 
 
@@ -60,29 +62,33 @@ Server runs at 👉 http://localhost:3000
 
 ### 5️⃣ Setup Frontend
 cd frontend
-npm install
-npm run dev
 
+npm install
+
+npm run dev
 
 Frontend runs at 👉 http://localhost:5173 (Vite default) or http://localhost:3001 depending on setup.
 
 ### 📡 API Endpoints
 **Get all passwords**
 GET /
+
 Returns all saved passwords.
 
 **Save a password**
 POST /
+
 Content-Type: application/json
+
 {
   "site": "example.com",
   "username": "john_doe",
   "password": "mypassword123"
 }
 
-
 **Delete a password**
 DELETE /
+
 Content-Type: application/json
 {
   "id": "password-id"
