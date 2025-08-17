@@ -36,8 +36,8 @@ It allows you to **save, view, copy, edit, and delete** your credentials securel
 └── README.md
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
-```bash
+
+### 1️⃣ Clone repository
 git clone https://github.com/SmritiD2004/PassNest.git
 cd passnest
 
