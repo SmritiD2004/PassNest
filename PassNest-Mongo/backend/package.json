@@ -16,5 +16,6 @@
     "express": "^5.1.0",
     "mongodb": "^6.18.0"
   },
-  "description": ""
+  "description": "",
+  "type": "module"
 }

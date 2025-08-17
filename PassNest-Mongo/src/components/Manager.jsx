@@ -11,14 +11,14 @@ const Manager = () => {
   const [form, setForm] = useState({ site: "", username: "", password: "" });
   const [passwordArray, setPasswordArray] = useState([]);
 
-  const getPasswords = async () => {
-    let req = await fetch("http://localhost:3000/");
-    let passwords = await req.json();
-    console.log(passwords);
-    setPasswordArray(passwords);
-  };
+   const getPasswords = async () => {
+        let req = await fetch("http://localhost:3000/")
+        let passwords = await req.json()
+        setPasswordArray(passwords)
+    }
+
   useEffect(() => {
-    getPasswords();
+    getPasswords()
   }, []);
 
   const copyText = (text) => {
@@ -54,7 +54,7 @@ const Manager = () => {
     }
   };
 
-  const savePasswords = async () => {
+const savePasswords = async () => {
     if (
       form.site.length > 3 &&
       form.username.length > 3 &&
@@ -89,7 +89,6 @@ const Manager = () => {
       toast("Error: Password not saved!");
     }
   };
-
   const deletePasswords = async (id) => {
     
     let c = confirm("Are you sure you want to delete this password?");
